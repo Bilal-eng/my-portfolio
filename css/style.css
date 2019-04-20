@@ -1,0 +1,34 @@
+body {
+    /* padding-top: 70px */
+    height: 4000px
+}
+
+h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
+
+/** 
+    Start Overriding Bootstrap
+*/
+
+.navbar { min-height: 70px }
+
+.navbar-inverse .navbar-brand {
+    color: #BBB;
+    font-size: 30px;
+    line-height: 40px
+}
+
+.navbar-inverse .navbar-brand span { color: #FF3547 }
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #BBB;
+    font-size: 18px;
+    line-height: 40px
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus { background-color: #FF3547 }
+
+/**
+    End Overriding Bootstrap
+*/
