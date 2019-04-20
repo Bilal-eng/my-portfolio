@@ -5,30 +5,204 @@ body {
 
 h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
 
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 /** 
     Start Overriding Bootstrap
 */
 
 .navbar { min-height: 70px }
 
-.navbar-inverse .navbar-brand {
-    color: #BBB;
+.navbar-default {
+    background: none !important;
+    border: none !important
+}
+
+.navbar-default .navbar-brand {
+    margin-top: 10px;
     font-size: 30px;
-    line-height: 40px
+    letter-spacing: 3px;
+    color: #FFF
 }
 
-.navbar-inverse .navbar-brand span { color: #FF3547 }
+.navbar-default .navbar-brand span { color: #FF3547 }
 
-.navbar-inverse .navbar-nav > li > a {
-    color: #BBB;
-    font-size: 18px;
-    line-height: 40px
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none
 }
 
-.navbar-inverse .navbar-nav > .active > a,
-.navbar-inverse .navbar-nav > .active > a:hover,
-.navbar-inverse .navbar-nav > .active > a:focus { background-color: #FF3547 }
+
+
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav > li > a {
+        font-size: 20px;
+        line-height: 40px;
+        color: #FFF;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+    }
+    
+    .navbar-default .navbar-nav > li:hover a,
+    .navbar-default .navbar-brand:hover {
+        color: #FF3547
+    }
+    
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        background-color: transparent !important;
+        color: #FF3547
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-fixed-top .navbar-collapse {
+    height:700px;
+    background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        font-size: 20px;
+        line-height: 40px;
+        color: #FFF;
+        -webkit-transition: all .5s ease-in-out;
+        -moz-transition: all .5s ease-in-out;
+        -o-transition: all .5s ease-in-out;
+        transition: all .5s ease-in-out;
+        text-align: center
+    }
+
+    .navbar-default .navbar-nav > li:hover a,
+    .navbar-default .navbar-brand:hover {
+        color: #FF3547
+    }
+
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        background-color: transparent;
+        color: #FF3547
+    }
+}
+
+/* Solid class attached on scroll past first section */
+.navbar.solid {
+    background-color: #FAFAFA !important;
+    height: 80px;
+    transition: background-color 1s ease-in-out 0s;
+    box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25)
+}
+.navbar.solid .navbar-brand {
+    color: #262626;
+    transition: color 1s ease-in-out 0s;
+}
+.navbar.solid .navbar-nav > li > a {
+    color: #262626;
+    transition: color 1s ease-in-out 0s;
+}
 
 /**
     End Overriding Bootstrap
 */
+
+/* Start Header Section */
+
+.header {
+    background: url('../images/header.png') no-repeat center center fixed;
+    min-height: 600px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: -20px;
+}
+
+.overlay {
+    background: rgba(49, 55, 61, .8);
+    width: 100%;
+    height: 100%;
+    min-height: 600px   
+}
+
+.header .intro {
+    color: #FFF;
+    padding-top: 150px;
+    padding-bottom: 200px
+}
+
+.header .intro .h1 {
+    font-size: 45px;
+    font-weight: 600;
+    letter-spacing: 2px
+}
+
+.header .intro .social-icon {
+    padding-top: 20px
+}
+
+.header .intro .social-icon ul li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 5px
+}
+
+.header .intro .social-icon ul li a {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    color: #FFF;
+    font-size: 14px;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.header .intro .social-icon ul li:hover a {
+    background-color: #FF3547
+}
+
+.header .intro .arrow {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 40px 0
+}
+
+.header .intro .arrow i {
+    border: 2px solid #7B7B7B;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 32px;
+    cursor: pointer;
+    color: #FFF;
+    transition: all .5s ease-in-out
+}
+
+.header .arrow i:hover {
+    background-color: #FF3547;
+    color: #FFF
+}
+
+/* End Header Section */
+
+/* Start About Me Section */
+
+.about-me {
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+/* End About Me Section */
