@@ -1,7 +1,13 @@
 $(function(){
+    
+    // Nice Scroll
+    $('html').niceScroll({
+        cursorcolor: '#FF3547',
+        cursorwidth: "7px",
+        cursorborder: "1px solid #FF3547"
+    });
 
     // Adjust Header Height
-
     var myHeader = $('.header');
 
     myHeader.height($(window).height());
@@ -36,6 +42,19 @@ $(function(){
     $('.links li a').click(function(){
         $('html, body').animate({
             scrollTop: $('#' + $(this).data('value')).offset().top - 70
+        }, 1000);
+    });
+
+    // Caching Scroll To Top Button
+    var scrollButton = $('#scroll-top');
+    $(window).scroll(function(){
+        $(this).scrollTop() >= 600 ? scrollButton.show(300) : scrollButton.hide(300);
+    });
+
+    // Click On The Button To Scroll Top
+    scrollButton.click(function(){
+        $('html, body').animate({
+            scrollTop: 0
         }, 1000);
     });
 

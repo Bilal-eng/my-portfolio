@@ -403,3 +403,22 @@ footer .copyright { font-size: 24px }
 footer .copyright span { font-style: italic; color: #FF3547 }
 
 /* End Footer */
+
+/* Scroll To Top */
+
+#scroll-top{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    background-color: #272727;
+    color: #DDD;
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    z-index: 9999;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    display: none
+}
+
+#scroll-top:hover { background-color: #FF3547; color: #FFF }
