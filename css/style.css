@@ -108,6 +108,10 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
     transition: color 1s ease-in-out 0s;
 }
 
+.navbar.solid .navbar-nav > li > a:hover {
+    color: #FF3547
+}
+
 /**
     End Overriding Bootstrap
 */
@@ -202,7 +206,31 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
 
 .about-me {
     padding-top: 50px;
-    padding-bottom: 50px
+    padding-bottom: 50px;
+    background: #EFEFEF
+}
+
+.about-me .personal-info .lead {
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px
+}
+
+.about-me .about-list {
+    font-style: italic;
+    font-size: 18px
+}
+
+.about-me .about-list ul li {
+    margin-bottom: 20px
+}
+
+.about-me .about-list ul li .title {
+    color: #a1a1a1;
+    font-weight: 700;
+    padding-bottom: 2px;
+    margin-right: 5px;
+    border-bottom: 1px dotted #a1a1a1
 }
 
 /* End About Me Section */
