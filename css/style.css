@@ -1,8 +1,3 @@
-body {
-    /* padding-top: 70px */
-    height: 4000px
-}
-
 h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
 
 * {
@@ -40,6 +35,11 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
     bottom: 10px !important
 }
 
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #FF3547 !important
+}
+
 
 @media (min-width: 768px) {
     .navbar-default .navbar-nav > li > a {
@@ -50,6 +50,7 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
         -moz-transition: all .5s ease-in-out;
         -o-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out;
+        margin-right: 10px
     }
     
     .navbar-default .navbar-nav > .active > a,
@@ -87,7 +88,7 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
 /* Solid class attached on scroll past first section */
 .navbar.solid {
     background-color: #FAFAFA !important;
-    height: 80px;
+    height: 70px;
     transition: background-color 1s ease-in-out 0s;
     box-shadow: 0px 3px 4.6px 0.3px rgba(0,0,0,0.25)
 }
@@ -100,13 +101,13 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
     transition: color 1s ease-in-out 0s;
 }
 
-.navbar.solid .navbar-nav > li > a:hover {
-    color: #FFF
+.navbar-default .navbar-nav > li > a:hover {
+    color: #FFF !important
 }
 
-.navbar-default .navbar-nav > li > a:hover,
-.navbar-default .navbar-nav > li > a:focus {
-    color: #FFF
+.navbar.solid .navbar-nav > li > a:hover,
+.navbar.solid .navbar-nav > li > a:focus {
+    color: #262626 !important
 }
 
 /**
@@ -351,3 +352,54 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
 }
 
 /* End My Portfolio Section */
+
+/* Start Contact Infotmation Section */
+
+.contact {
+    background: url('../images/contact-us.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #FFF
+}
+
+.contact .overlay {
+    background: rgba(9, 9, 9, .8);
+    width: 100%;
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #DDD
+}
+
+.contact .overlay i {
+    color: #FF3547
+}
+
+.contact .overlay .lead {
+    margin-bottom: 40px
+}
+
+.contact .overlay textarea {
+    height: 106px
+}
+
+.contact input[type="text"],
+.contact textarea {
+    background: rgba(82, 78, 78, .5);
+    border: none;
+    color: #FFF
+}
+
+/* End Contact Infotmation Section */
+
+/* Start Footer */
+
+footer { padding-top: 30px; padding-bottom: 30px; }
+
+footer .copyright { font-size: 24px }
+
+footer .copyright span { font-style: italic; color: #FF3547 }
+
+/* End Footer */

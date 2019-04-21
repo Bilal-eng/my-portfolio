@@ -33,12 +33,12 @@
                         <a class="navbar-brand" href="#">BI<span>LAL</span></a>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="active"><a href="#" class="hvr-underline-from-left">Home <span class="sr-only">(current)</span></a></li>
-                            <li><a href="#" class="hvr-underline-from-left">About</a></li>
-                            <li><a href="#" class="hvr-underline-from-left">Skills</a></li>
-                            <li><a href="#" class="hvr-underline-from-left">Portfolio</a></li>
-                            <li><a href="#" class="hvr-underline-from-left">Contact</a></li>
+                        <ul class="links nav navbar-nav navbar-right">
+                            <li class="active"><a data-value="header" href="#" class="hvr-underline-from-left">Home <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#" data-value="about" class="hvr-underline-from-left">About</a></li>
+                            <li><a href="#" data-value="skills" class="hvr-underline-from-left">Skills</a></li>
+                            <li><a href="#" data-value="portfolio" class="hvr-underline-from-left">Portfolio</a></li>
+                            <li><a href="#" data-value="contact" class="hvr-underline-from-left">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
@@ -48,7 +48,7 @@
 
         <!-- Start Header Section -->
 
-        <section class="header text-center">
+        <section id="header" class="header text-center">
                 <div class="overlay">
                     <div class="container">
                         <div class="row">
@@ -164,7 +164,7 @@
 
         <!-- Start Skills Section -->
 
-        <section class="my-skills">
+        <section id="skills" class="my-skills">
             <div class="overlay">
                 <div class="container">
                     <h2 class="h1 text-center">My <span>Skills</span></h2>
@@ -239,51 +239,10 @@
         </section>
 
         <!-- End Skills Section -->
-
+        
         <!-- Start My Portfolio Section -->
 
-        <!-- <section class="my-portfolio">
-            <div class="container">
-                <h2 class="h1 text-center">My <span>Portfolio</span></h2>
-                <div class="img-profile col-lg-4 col-sm-6">
-                    <div class="image">
-                        <img class="img-responsive" src="images/portfolio/html-css-jquery.png" alt="Template-01">
-                    </div>
-                    <div class="image">
-                        <img class="img-responsive" src="images/portfolio/Apptastico-Template-HTML5-CSS3.png" alt="Template-02">
-                    </div>
-                    <div class="image">
-                        <img class="img-responsive" src="images/portfolio/Responsive-Web-Design.png" alt="Template-03">
-                    </div>
-                </div>
-                <div class="img-profile col-lg-4 col-sm-6">
-                    <div class="image">
-                        <img class="img-responsive" src="images/portfolio/Simple-Web-Page-Design-Html-Css.png" alt="Template-04">
-                    </div>
-                    <div class="image">
-                        <img class="img-responsive" src="images/portfolio/Template-Just-With-HTML5-CSS3.png" alt="Template-05">
-                    </div>
-                    <div class="image">
-                        <img class="img-responsive" src="images/portfolio/Template-Multiple-Pages-Html5-Css3.png" alt="Template-06">
-                    </div>
-                </div>
-                <div class="img-profile col-lg-4 col-sm-6">
-                    <div class="image">
-                        <img class="img-responsive" src="images/portfolio/The-First-Bootstrap-Template.png" alt="Template-07">
-                    </div>
-                    <div class="image">
-                        <img class="img-responsive" src="images/portfolio/The-First-Template-Just-HTM-CSS.png" alt="Template-08">
-                    </div>
-                    <div class="image">
-                        <img class="img-responsive" src="images/portfolio/html-css-javascript.jpg" alt="Template-09">
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-                <!-- Start My Portfolio Section -->
-
-        <section class="my-portfolio">
+        <section id="portfolio" class="my-portfolio">
             <div class="container">
                 <h2 class="h1 text-center">My <span>Portfolio</span></h2>
                 <!-- <div class="row"> -->
@@ -371,7 +330,52 @@
 
         <!-- ُEnd My Portfolio Section -->
 
+        <!-- Start Contact Infotmation -->
 
+        <section id="contact" class="contact text-center">
+            <div class="overlay">
+                <div class="container">
+                    <div class="row">
+                        <i class="fas fa-headphones fa-5x"></i>
+                        <h2 class="h1">Tell Us What You Fell</h2>
+                        <p class="lead">Feel Free To Contact Us Anytime</p>
+                        <form>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-lg" placeholder="User Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-lg" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control input-lg" placeholder="Cell Phone">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Message"></textarea>
+                                </div>
+                                <button type="button" class="btn btn-danger input-lg btn-block">Contact Us</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Contact Infotmation -->
+
+        <!-- Start Footer -->
+
+        <footer class="text-center">
+            <div class="container">
+                <div class="copyright">
+                    Copyright &copy; 2019 <span>Bilal Comp.</span> Inc.
+                </div>
+            </div>
+        </footer>
+
+        <!-- End Footer -->
 
         <script src="js/jquery-1.11.1.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

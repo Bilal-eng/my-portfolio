@@ -6,7 +6,9 @@ $(function(){
 
     myHeader.height($(window).height());
 
-    myHeader.resize($(window).height());
+    $(window).resize(function(){
+        myHeader.height($(window).height());
+    });
 
     // Transition Effect For Navbar
     $(window).scroll(function(){
@@ -22,6 +24,18 @@ $(function(){
     $('.header .arrow i').click(function(){
         $('html, body').animate({
             scrollTop: $('.about-me').offset().top - 70
+        }, 1000);
+    });
+
+    // Scrolling Smoothly to Every Section
+
+    $('.links li a').click(function(){
+        $(this).parent().addClass('active').siblings().removeClass('active');
+    });
+
+    $('.links li a').click(function(){
+        $('html, body').animate({
+            scrollTop: $('#' + $(this).data('value')).offset().top - 70
         }, 1000);
     });
 
