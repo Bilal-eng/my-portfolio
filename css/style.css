@@ -281,3 +281,73 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
 }
 
 /* End My Skills */
+
+/* Start My Portfolio Section */
+
+.my-portfolio {
+    background-color: #FAFAFA;
+    padding-top: 50px;
+    padding-bottom: 50px
+}
+
+.my-portfolio .h1 {
+    letter-spacing: 3px;
+    margin-bottom: 50px
+}
+
+.my-portfolio .h1 span {
+    color: #FF3547
+}
+
+.my-portfolio .img-profile {
+    margin-bottom: 30px
+}
+
+.my-portfolio .image {
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.image:before {
+    content: "";
+    width: 100%;
+    height: 400px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+}
+
+.my-portfolio .image a {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: calc((100% - 103.56px)/2)
+}
+
+.my-portfolio .image .btn-default {
+    background-color: transparent !important;
+    color: #FFF;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out
+}
+
+.my-portfolio .image .btn-default:hover {
+    background-color: #FF3547 !important
+}
+
+.image:hover img {
+    animation: moveSlideshow 3s linear
+}
+
+@keyframes moveSlideshow {
+    100% {
+        transform: translateY(-60%);
+    }
+}
+
+/* End My Portfolio Section */
