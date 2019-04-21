@@ -6,6 +6,8 @@ $(function(){
 
     myHeader.height($(window).height());
 
+    myHeader.resize($(window).height());
+
     // Transition Effect For Navbar
     $(window).scroll(function(){
         // checks if window is scrolled more than 500px, adds/removes solid class
@@ -14,6 +16,13 @@ $(function(){
         } else {
             $('.navbar').removeClass('solid');
         }
+    });
+
+    // Smooth Scrolling
+    $('.header .arrow i').click(function(){
+        $('html, body').animate({
+            scrollTop: $('.about-me').offset().top - 70
+        }, 1000);
     });
 
 });
