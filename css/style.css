@@ -365,7 +365,7 @@ footer .copyright span { font-style: italic; color: #FF3547 }
 
 @media (max-width: 446px) {
     footer .copyright { font-size: 16px }
-    .header .intro { padding-top: 85px }
+    .header .intro { padding-top: 80px }
 }
 
 /* End Footer */
