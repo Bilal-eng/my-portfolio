@@ -413,6 +413,10 @@ footer .copyright { font-size: 24px }
 
 footer .copyright span { font-style: italic; color: #FF3547 }
 
+@media (max-width: 446px) {
+    footer .copyright { font-size: 16px }
+}
+
 /* End Footer */
 
 /* Start Scroll To Top */
