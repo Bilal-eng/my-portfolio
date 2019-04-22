@@ -44,6 +44,11 @@ $(function(){
             scrollTop: $('#' + $(this).data('value')).offset().top - 70
         }, 1000);
     });
+    $('.btn-primary').click(function(){
+        $('html, body').animate({
+            scrollTop: $('#' + $(this).data('value')).offset().top - 70
+        }, 1000);
+    });
 
     // Caching Scroll To Top Button
     var scrollButton = $('#scroll-top');
@@ -58,4 +63,15 @@ $(function(){
         }, 1000);
     });
 
+});
+
+// Loading Spinner Code
+
+$(window).load(function(){
+    $('.loading-spinner .sk-cube-grid').fadeOut(1000, function(){
+        $('body').css('overflow', 'auto');
+        $(this).parent().fadeOut(1000, function(){
+            $(this).remove();
+        });
+    });
 });
