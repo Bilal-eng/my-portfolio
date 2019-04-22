@@ -15,6 +15,10 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
     Start Overriding Bootstrap
 */
 
+.container {
+    overflow: hidden
+}
+
 .navbar { min-height: 70px }
 
 .navbar-default {
