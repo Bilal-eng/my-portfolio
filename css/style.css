@@ -350,8 +350,11 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
 .contact textarea {
     background: rgba(82, 78, 78, .5);
     border: none;
-    color: #FFF
+    color: #FFF;
+    font-size: 18px
 }
+
+.contact .btn-danger { font-size: 18px }
 
 /* End Contact Infotmation Section */
 
