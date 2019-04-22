@@ -447,7 +447,7 @@ footer .copyright span { font-style: italic; color: #FF3547 }
 /* Start Loading Spinner */
 
 .loading-spinner {
-    background: #337AB7;
+    background: #333;
     color: #FFF;
     position: absolute;
     left: 0;
