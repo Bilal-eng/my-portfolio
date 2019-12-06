@@ -19,6 +19,10 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
 
 .navbar { min-height: 70px }
 
+.navbar-toggle {
+    margin-top: 18px !important;
+  }
+
 .navbar-default { background: none !important; border: none !important }
 
 .navbar-default .navbar-brand {
@@ -119,8 +123,7 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
-    margin-top: -20px;
+    background-size: cover
 }
 
 .header .overlay {
@@ -133,7 +136,7 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
 .header .intro {
     color: #FFF;
     padding-top: 150px;
-    padding-bottom: 200px
+    padding-bottom: 110px;
 }
 
 .header .intro .h1 {
@@ -172,7 +175,7 @@ h1, h2, h3, h4, h5, .lead { font-family: 'Droid Sans', sans-serif }
     left: 0;
     width: 100%;
     text-align: center;
-    padding: 40px 0
+    padding-bottom: 16px;
 }
 
 .header .intro .arrow i {
